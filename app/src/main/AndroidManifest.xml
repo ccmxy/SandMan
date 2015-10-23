@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.guest.band" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bandMembers.bandMembersActivity"
+            android:label="@string/title_activity_band_members" >
+        </activity>
+        <activity
+            android:name=".bandMembersActivity"
+            android:label="@string/title_activity_band_members"
+            android:parentActivityName=".ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.BandMembersActivity"
+            android:label="@string/title_activity_band_members"
+            android:parentActivityName=".ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.discography"
+            android:label="@string/title_activity_discography" >
+        </activity>
+        <activity
+            android:name=".ui.TourDatesActivity"
+            android:label="@string/title_activity_tour_dates" >
+        </activity>
+    </application>
+
+</manifest>
